@@ -1,23 +1,23 @@
+import 'package:decider/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Homeview());
+  runApp(MyApp());
 }
 
-class Homeview extends StatelessWidget {
-   Homeview({super.key});
-
+class MyApp extends StatelessWidget {
+  MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner:false,
-      title: 'Decider',
+      debugShowCheckedModeBanner: false,
+      title: 'Decider App',
       theme: ThemeData(
-        primaryColor: Colors.black,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.pink)
-    ),
-     home: Homeview(),
+        primaryColor: Colors.red,
+
+        ),
+      home: HomeView(),
     );
   }
 }
